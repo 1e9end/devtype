@@ -11,6 +11,7 @@ Made the ...
 Made the ...
 
 ### Built with
+HTML, CSS, JS, NumJS
 
 ## About the process
 
