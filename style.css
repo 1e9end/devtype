@@ -1,0 +1,84 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  overflow: auto;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(9,9,60,1) 30%, rgba(255,255,255,1) 100%);*/
+  background: black;
+  padding: 10px 10px;
+  z-index: 1000000;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: relative;
+  top: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .logo {
+	float:left;
+	padding: 0;
+	width: 100px;
+}
+
+.header a:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+.header a:active {
+  background-color: white;
+  color: black;
+}
+
+.header-links {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.info{
+	outline: none;
+	margin: 10px;
+	padding: 10px 30px;
+	border-radius: 10px;
+	background-color: #dddddd;
+  opacity: 0.5;
+}
+
+#personalInfo{
+  border-color: black;
+  border: 2px solid;
+  background-color: gray;
+  padding: 5px;
+  line-height: 0.5;
+  margin-right: -20px;
+  border-radius: 20px;
+  float: right;
+}
