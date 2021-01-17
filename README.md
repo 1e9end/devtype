@@ -13,17 +13,11 @@ Made the ...
 ### Built with
 HTML/CSS/JS, jQuery, Numjs
 
-## About the process
-
 ### Inspiration
-
-### What it does
 
 ### How we built it
 
 ### Challenges
-
-### Accomplishments
 
 ### What we learned
 
