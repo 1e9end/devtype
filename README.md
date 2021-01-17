@@ -12,7 +12,7 @@ Made the ...
 
 ### Built with
 HTML/CSS/JS, jQuery, Numjs
-
+---
 ### Inspiration
 
 ### How we built it
