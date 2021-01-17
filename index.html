@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devtype</title>
-  <link rel = "icon" href = "https://i.ibb.co/6RxXXM5/DTLogo.png">
+  <link rel = "icon" href = "https://i.imgur.com/m7maMpZ.png">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 	<link rel = "stylesheet" href = "style.css">
@@ -18,24 +18,40 @@
 	</div>
   -->
 	<div class="header">
-		<img src = "https://i.ibb.co/gMp442C/DTLogo.png" class="logo">
-		<p style="color:white; float: left; font-size: 1.5em; vertical-align: text-top">Devtype</p>
+		<img src = "https://i.ibb.co/gMp442C/DTLogo.png" class="logo" style = "inline-block">
+		<p style="color: white; font-size: 1.5em; float: left;">Devtype</p>
+    <p style="color: white; font-size: 1em; float: right;">Developer Typing Practice</p>
 	</div>
 	<br><br><br><br><br><br>
 	<div id = "typer" class = "info">
-    <div id = "time" class = "typeInfo">
+    <select id = "langSelect" onchange="initType()">
+      <option value="0">Javascript</option>
+      <option value="1">Python</option>
+      <option value="2">C#</option>
+      <option value="3">C++</option>
+      <option value="4">SQL</option>
+      <option value="5">HTML</option>
+      <option value="6">PHP</option>
+      <option value="7">jQuery</option>
+      <option value="8">Lua</option>
+    </select>
+    <div class = "typeInfo">
+      Time:<p id = "time">Placeholder</p>
 		</div>
-    <div id = "wpm" class = "typeInfo">
+    <div class = "typeInfo">
+      WPM: <p id = "wpm">Placeholder</p>
 		</div>
-    <div id = "accuracy" class = "typeInfo">
+    <div class = "typeInfo">
+      Accuracy: <p id = "accuracy">Placeholder</p>
 		</div>
-		<div id = "predicted" class = "typeInfo">
+		<div class = "typeInfo">
+      Predicted: <p id = "predicted">Placeholder</p>
 		</div>
     <div id = "template">
       <p id = "templateText"></p>
     </div>
-    <br />
-    <input type="text" id="typeInput" name="typeInput"> 
+    <br>
+    <input type="text" id="typeInput" name="typeInput" placeholder="Start Typing!"> 
 	</div>
 	<div id = "Statistics" class = "info">
 		<h1>Statistics</h1>
