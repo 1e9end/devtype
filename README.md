@@ -13,6 +13,7 @@ Made the ...
 ### Built with
 HTML/CSS/JS, jQuery, Numjs
 
+## The Process
 ---
 ### Inspiration
 
