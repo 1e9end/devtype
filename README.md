@@ -11,7 +11,7 @@ Made the ...
 Made the ...
 
 ### Built with
-HTML, CSS, JS, NumJS
+HTML/CSS/JS, jQuery, Numjs
 
 ## About the process
 
@@ -28,4 +28,5 @@ HTML, CSS, JS, NumJS
 ### What we learned
 
 ### Future of Devtype
-
+We will implement accounts and store user data & credentials on a database (our original plan) instead of using localStorage (not enough time to setup backend).
+In addition, will be adding more templates and customization (such as font, theme) changes. 
