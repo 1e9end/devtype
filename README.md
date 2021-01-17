@@ -14,7 +14,7 @@ Made the ...
 HTML/CSS/JS, jQuery, Numjs
 
 ## The Process
----
+
 ### Inspiration
 
 ### How we built it
