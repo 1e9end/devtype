@@ -24,7 +24,7 @@
 	</div>
 	<br><br><br><br><br><br>
 	<div id = "typer" class = "info">
-    <select id = "langSelect" onchange="initType()">
+    <select id = "langSelect" onchange="initType()" style = "float: left">
       <option value="0">Javascript</option>
       <option value="1">Python</option>
       <option value="2">C#</option>
@@ -47,6 +47,12 @@
 		<div class = "typeInfo">
       Predicted: <p id = "predicted">Placeholder</p>
 		</div>
+    <div class = "typeInfo">
+      Peak WPM:<p id = "roundBest">Placeholder</p>
+		</div>
+    <div class = "typeInfo" style = "float:right">
+      Record WPM: <p id = "record">Placeholder</p>
+		</div>
     <div id = "template">
       <p id = "templateText"></p>
     </div>
@@ -55,7 +61,7 @@
 	</div>
 	<div id = "Statistics" class = "info">
 		<h1>Statistics</h1>
-		<p></p>
+		<p>Stored locally, data will be cleared upon cache clearing.</p>
 		<p></p>
 	</div>
   <p style = "text-align: center; color: white;">Made with ❤ by <a href = "https://1e9end.github.io">1egend</a> and <a href = "https://github.com/TheCelestialCube"> TheCelestialCube</a></p>
