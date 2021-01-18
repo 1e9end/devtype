@@ -69,6 +69,7 @@ a:active {
   color: white;
   padding: 10px;
   border-radius: 5px;
+  font-size: 2.5vh;
   // line-height: 0.5;
   width: 10%;
 }
@@ -87,20 +88,28 @@ a:active {
   border-radius: 15px;
   background-color: white;
   width: 80%;
-  height: auto;
   margin: 0 auto;
   text-align: left;
   margin-top: 10px;
   padding: 10px 20px; 
   font-size: 150%;
+  overflow: hidden;
 }
 
 #templateText{
   line-height: 2;
   padding: 0px;
-  height: 170px;
+  //60vh - 100px; 
+  height: 25vh;
   margin: 0 auto;
   overflow-y: hidden;
+  font-size: 3.5vh;
   font-family: Consolas, Arial, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
+}
+
+#prevSession, #allTime {
+  width: 100%;
+  padding: 10px;
+  height: 60vh;
 }
