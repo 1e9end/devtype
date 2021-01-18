@@ -5,7 +5,6 @@ Check out the [website](https://1e9end.github.io/devtype) <br />
 [Video demonstration](https://www.youtube.com/watch?v=ZdVcBjukAeg)
 ## Built by
 [@1e9end (1egend)](https://github.com/1e9end) <br />
-<br />
 [@TheCelestialCube](https://github.com/TheCelestialCube) <br/>
 
 ### Built with
