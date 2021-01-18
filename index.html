@@ -8,7 +8,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 	<link rel = "stylesheet" href = "style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src = "https://cdn.jsdelivr.net/npm/numjs@0.16.0/src/index.min.js" defer></script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
   <script src = "script.js" defer></script>
 </head>
 <body>
@@ -35,23 +37,23 @@
       <option value="7">jQuery</option>
       <option value="8">Lua</option>
     </select>
-    <div class = "typeInfo">
-      Time:<p id = "time">Placeholder</p>
+    <div class = "typeInfo" id = "timeUI">
+      Time:<p id = "time">60</p>
 		</div>
-    <div class = "typeInfo">
-      WPM: <p id = "wpm">Placeholder</p>
+    <div class = "typeInfo" id = "wpmUI">
+      WPM: <p id = "wpm">0</p>
 		</div>
-    <div class = "typeInfo">
-      Accuracy: <p id = "accuracy">Placeholder</p>
+    <div class = "typeInfo" id = "accUI">
+      Accuracy: <p id = "accuracy">0</p>
 		</div>
-		<div class = "typeInfo">
-      Predicted: <p id = "predicted">Placeholder</p>
+		<div class = "typeInfo" id = "aveUI">
+      Projected WPM: <p id = "predicted">0</p>
 		</div>
-    <div class = "typeInfo">
-      Peak WPM:<p id = "roundBest">Placeholder</p>
+    <div class = "typeInfo" id = "peakUI">
+      Peak WPM:<p id = "roundBest">0</p>
 		</div>
     <div class = "typeInfo" style = "float:right">
-      Record WPM: <p id = "record">Placeholder</p>
+      Record WPM: <p id = "record">0</p>
 		</div>
     <div id = "template">
       <p id = "templateText"></p>
@@ -61,9 +63,10 @@
 	</div>
 	<div id = "Statistics" class = "info">
 		<h1>Statistics</h1>
-		<p>Stored locally, data will be cleared upon cache clearing.</p>
-		<p></p>
+    <div id = "prevSession"></div>
+    <div id = "allTime"></div>
+		<p>Stored locally, data will usually be cleared upon cookie/cache clearing.</p>
 	</div>
-  <p style = "text-align: center; color: white;">Made with ❤ by <a href = "https://1e9end.github.io">1egend</a> and <a href = "https://github.com/TheCelestialCube"> TheCelestialCube</a></p>
+  <p style = "text-align: center; color: white;">Made with ❤ by <a href = "https://1e9end.github.io">1egend</a> and <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> TheCelestialCube</a></p> <!--https://github.com/TheCelestialCube -->
 </body>
 </html>
