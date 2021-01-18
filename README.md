@@ -1,5 +1,5 @@
 # Devtype
-Developer typing practice with AI-powered feedback. Choose from various different fields of computer science (e.g algorithms in C++, HTTP requests with Node.js) to practice typing syntax and symbols.
+Developer typing practice with visual personalized stats and feedback. Choose from various different fields of computer science (e.g C++ algorithms, SQL commands) to practice typing syntax and symbols.
 
 Check out the [website](https://1e9end.github.io/devtype) <br />
 [Video demonstration]()
@@ -11,7 +11,7 @@ Made the ...
 Made the ...
 
 ### Built with
-HTML/CSS/JS, jQuery, Numjs
+HTML/CSS/JS, jQuery, Google Charts, Numjs
 
 ## The Process
 
