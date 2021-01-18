@@ -115,7 +115,7 @@ var timer = 60;
 var score = 0;
 var accuracy;
 var wpm;
-var predicted;
+var predicted = getAverage(); 
 var errors = 0;
 var updateWpm;
 
@@ -190,8 +190,12 @@ function updateInfo(wpm, timer, accuracy, predicted, roundBest){
 }
 
 function initType(){
-  //var box = document.getElementById("timeUI");
-  //box.style = "background-color: #111111";
+  var box = document.getElementById("timeUI");
+  box.style = "background-color: #111111";
+  var box = document.getElementById("accUI");
+  box.style = "background-color: #111111";
+  var box = document.getElementById("wpmUI");
+  box.style = "background-color: #111111";
   lineStart = 0;
   language = parseInt(document.getElementById("langSelect").value);
   document.getElementById("typeInput").value = "";
@@ -199,12 +203,14 @@ function initType(){
   typedString = "";
   wordNum = 0;
   words = getWords(language);
+  predicted = getAverage(); 
   currentWord = words[wordNum];  
   typedWords = [];
   for (var i = 0; i < 300; ++i){
     typedWords.push(0);
   }
   timer = 60;
+  start = false;
   score = 0;
   errors = 0;
   wpms = [];
@@ -247,6 +253,7 @@ function setLocal(name, value){
 function drawLastSession() {
   var data = new google.visualization.DataTable();
   var pastWpms = localStorage.session.split(" ");
+  pastWpms.splice(pastWpms.length - 1, 1);
   data.addColumn('number', 'X');
   data.addColumn('number', "WPM so far");
 
@@ -302,6 +309,7 @@ function drawLastSession() {
 function drawAllTime() {
   var data = new google.visualization.DataTable();
   var allWpms = localStorage.wpm.split(" ");
+  allWpms.splice(allWpms.length - 1, 1);
   data.addColumn('number', 'X');
   data.addColumn('number', "Final WPM");
 
@@ -355,7 +363,6 @@ function drawAllTime() {
 }
 
 function updateStats(){
-    
   if (localStorage.session){
     /** 
     var pastWpms = localStorage.session.split(" ");
@@ -423,12 +430,20 @@ function colourCode(ui, colourValues, val){
   }
 }
 
-function getAverage(list){
-  var sum = 0;
-  for (var i = 0; i < list.length; ++i){
-    sum += parseInt(list[i], 10);
+function getAverage(){
+  if (localStorage.wpm){
+    var allTime = localStorage.wpm.split(" ");
+    allTime.splice(allTime.length - 1, 1);
+    var sum = 0;
+    var len = Math.min(3, allTime.length);
+    for (var i = allTime.length - len; i < allTime.length; ++i){
+      sum += Number(allTime[i], 10);
+    }
+    return Math.round(sum/len);
   }
-  return sum/list.length;
+  else{
+    return 40;
+  }
 }
 
 function run(){
@@ -459,7 +474,6 @@ function run(){
       // Resets the program
       clearInterval(updateWpm);
       storeData(words, typedWords, wpm, wpms, accuracy);
-      predicted = getAverage(wpms); //HERE
       start = false;
       initType();
     }
