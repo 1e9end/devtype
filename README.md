@@ -15,13 +15,20 @@ HTML/CSS/JS, jQuery, Google Charts, Numjs
 
 ## The Process
 
-### Inspiration
+##What it does
+Devtype is a developer typing platform where you can choose from multiple languages and frameworks to practice typing with their respective syntaxes and awkward characters. It also provides great live feedback so you can see your wpm and accuracy in action while you are typing. Devtype also has incredible visual statistics such as wpm for your past sessions, so you can view how your wpm improved/varied over time as you practiced more and more.
 
-### How we built it
+##Inspiration
+Typing is essential to programming and computer work in general. And when you search online, you can find multiple great typing websites to improve upon your skills. But code != text, and often we find ourselves typing significantly slower while writing code. This is due to syntax and the awkward characters that we are not used to typing. Contrary to text typing, there are not many good typing platforms dedicated to programming... Hence we decided to develop our own! 
+
+##How we built it
+The website and typing framework was built with HTML/CSS/JS and all the data is stored in localStorage. Originally we had planned on building a node backend and saving the data in a mySQL server, but we didn't have enough time to implement those.
 
 ### Challenges
 
+
 ### What we learned
+During this project, we learned more about web development, including using localStorage instead of backend databases and Google Charts API. We also learned how to capture data efficiently and accurately and display it in a non-biased way. This was also the first time we did collaborative coding, and we grasped the key concepts of dividing and conquering and informing each other on which parts we were each completing.
 
 ### Future of Devtype
 We will implement accounts and store user data & credentials on a database (our original plan) instead of using localStorage (not enough time to setup backend).
