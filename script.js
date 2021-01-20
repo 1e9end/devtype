@@ -74,8 +74,10 @@ var jqueryTemplates = ["$(x).hide()", "$(function(){", "$(x)", "$(#x)", "$(.x)",
 
 var luaTemplates = ["local var = 1", "local function myFunction()", "end", "if x == 1 then", "elseif x == 1 then", "else", "for i = 0,1 do", "for _, i in pairs(list) do", "while true do", "_G var = 1", "local list = {}", "end)", "x += 1", "x -= 1", "x + 1", "x - 1", "x * 1", "x / 1", "x % 1", "x ^ 1", "x == 1", "x > 1", "x < 1", "x <= 1", "x >= 1", "x ~= 1", "and", "or", "not", "#list", "table.insert()", "list[i]", "for _, i in ipairs(dict) do", "tostring()", "tonumber()", "math.random()", "math.huge()", "math.sin()", "print(\"Hello World\")", "table.sort()", "math.rad()", "math.deg()", "os.time()", "os.date()", "os.clock()", "string.find()", "string.lower()", "string.upper()", "string.reverse()", "table.concat()", "table.move()", "table.remove()", "table.pack()", "string.sub()", "return x", "break"];
 
+var javaTemplates = ["public class x {}", "main()", "System.out.println(\"Hello world\")", "//comment", "string x = \"\";", "int x = 1;", "final varType x;", "float x = 1f;", "char x = \'\';", "boolean x = true;", "x + 1", "x - 1", "x * 1", "x / 1", "x % 1", "x++;", "x--;", "x += 1;", "x -= 1;", "x = 1;", "x *= 1;", "x /= 1;", "x %= 1;", "x &= 1;", "x |= 1;", "x ^= 1;", "x >>= 1;", "x <<= 1;", "x == 1", "x != 1", "x <= 1", "x >= 1", "x < 1", "x > 1", "&&", "||", "string.length()", "string.toUpperCase", "string.toLowerCase", "string.indexOf()", "string.concat()", "Math.max()", "Math.min()", "Math.sqrt()", "Math.abs()", "Math.random()", "if (){}", "else {}", "else if (){}", "()? true:false;", "switch(){}", "case x:", "break;", "return;", "while (){}", "do {}", "for (int i = 0; i < x; i++){}", "for (int i : list){}", "continue;", "String[] array;", "int[] array;", "array.length", "static void myMethod(){}"]
+
 var massive = [];
-massive.push(jsTemplates, pyTemplates, csharpTemplates, cppTemplates, sqlTemplates, webTemplates, phpTemplates, jqueryTemplates, luaTemplates);
+massive.push(jsTemplates, pyTemplates, csharpTemplates, cppTemplates, sqlTemplates, webTemplates, phpTemplates, jqueryTemplates, luaTemplates, javaTemplates);
 
 function getWords(lang) {
   var template = massive[lang];
